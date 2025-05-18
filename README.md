@@ -9,7 +9,7 @@ Un visualiseur de fichier JSON en terminal sous forme d’arbre coloré, soit :
 
 ## 🚀 Installation
 
-```
+```bash
 pip install textual rich
 # ou clone le repo et installe les dépendances manuellement
 ```
@@ -26,7 +26,7 @@ pip install textual rich
 
 ### 💻 Utilisation comme script
 
-```
+```bash
 python run_viewer.py -f mon_fichier.json
 ```
 Ce script lance le visualiseur de fichier JSON.
@@ -42,7 +42,7 @@ Arguments :
 
 ### 👨‍💻 Utilisation comme bibliothèque
 
-```
+```python
 from jsonviewer import view_json
 
 view_json("chemin/vers/ton_fichier.json", mode="auto")
