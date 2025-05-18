@@ -53,7 +53,7 @@ Le mode "auto" détecte l’environnement et choisit la meilleure interface.
 
 ### 📝 Signature
 
-```
+```python
 def view_json(
     file_path: Optional[str] = None, 
     mode: str = "auto"
@@ -64,30 +64,31 @@ def view_json(
 ## 📆 Fonctions exportées
 | Fonction              | Description                                          |
 |-----------------------|------------------------------------------------------|
-|Fonction principales   |                                                      |
+|Fonction principales                                                          |
 | view_json(...)        | Fonction principale pour afficher un JSON            |
 | run_console_viewer    | Affiche l’arbre JSON dans la console Rich            |
 | JSONViewer            | Classe Textual utilisée pour l’interface interactive |
 |                       |                                                      |
-|Fonctions utilitaires  |                                                      |
+|Fonctions utilitaires                                                         |
 | save_json(...)        | Sauvegarde une variable Python dans un fichier JSON  |
 | load_json(...)        | Charge un fichier JSON (via chemin ou GUI)           |
     
 ---
 
-## 📋 Exemple d’arborescence console :
+## 📋 Exemple d’arborescence console
 
 Fichier source :
 
+```json
 {
   "name": "Alice",
   "age": 30,
   "skills": ["Python", "Data"],
   "location": {"city": "Paris", "zip": 75000}
 }
-
+```
 Affiche console :
-
+```
 🌳 JSON example.json
 ├── name: Alice
 ├── age: 30
@@ -97,7 +98,7 @@ Affiche console :
 └── 📁 location
     ├── city: Paris
     └── zip: 75000
-    
+```    
 ---
 
 ## 🛠️ Utilitaires
@@ -113,7 +114,7 @@ dans un fichier .json, avec des options pratiques :
 
 #### Signature
 
-```
+```python
 def save_json(
     variable: Any,
     file_name: str,
@@ -125,7 +126,7 @@ def save_json(
 
 #### Exemple
 
-```
+```python
 from jsonviewer import save_json
 
 data = {
@@ -150,7 +151,7 @@ Si aucun chemin n’est fourni, elle ouvre une boîte de dialogue pour choisir u
 
 #### Signature
 
-```
+```python
 def load_json(file_path: Optional[str] = None
 ) -> Tuple[Optional[Any], Optional[str]]:
     """
@@ -161,7 +162,7 @@ def load_json(file_path: Optional[str] = None
 
 #### Exemple
 
-```
+```python
 data, path = load_json()  # ouvre une boîte de dialogue si aucun chemin fourni
 if data is not None:
     print(f"Fichier chargé : {path}")
@@ -182,17 +183,19 @@ jsonviewer/
 
 L'import est facilité grâce au fichier __init__ :
 
-```
+```python
 from jsonviewer import view_json, save_json
 ```
 
 ---
 
-## 📜 Licence
+## 📜 License
+
 MIT License
 
 ---
 
-## 📝 Contact
-Auteur : Didier Flamm
+## 📝 Contact
+
+Auteur : Didier Flamm  
 Date : Mai 2025
