@@ -7,11 +7,10 @@ Un visualiseur de fichier JSON en terminal sous forme d’arbre coloré, soit :
 
 ---
 
-## 🚀 Installation
+## 🚀 Installation des dépendances
 
 ```bash
 pip install textual rich
-# ou clone le repo et installe les dépendances manuellement
 ```
 
 ---
