@@ -86,7 +86,7 @@ Fichier source :
   "location": {"city": "Paris", "zip": 75000}
 }
 ```
-Affiche console :
+Affichage console :
 ```
 🌳 JSON example.json
 ├── name: Alice
@@ -172,13 +172,14 @@ if data is not None:
 ## 🧰 Organisation du code
 
 Le package contient :
-
-jsonviewer/  
-├── run_viewer.py         # Script de lancement  
-└── jsonviewer/  
-    ├── __init__.py    # Import simplifié des fonctions clés  
-    ├── viewer.py      # Visualiseur TUI et console, fonction view_json  
-    └── utils.py       # Fonction save_json et load_json  
+```
+jsonviewer/
+├── run_viewer.py         # Script de lancement
+└── jsonviewer/
+    ├── __init__.py    # Import simplifié des fonctions clés
+    ├── viewer.py      # Visualiseur TUI et console, fonction view_json
+    └── utils.py       # Fonction save_json et load_json
+```
 
 L'import est facilité grâce au fichier __init__ :
 
