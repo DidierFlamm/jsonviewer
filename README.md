@@ -29,7 +29,7 @@ pip install textual rich
 python run_viewer.py -f mon_fichier.json
 ```
 Ce script lance le visualiseur de fichier JSON.
-Par défaut, en environnement interactif (Jupyter, Spyder…), le visualiseur s’affiche en console colorée. 
+Par défaut, en environnement interactif (Jupyter,Spyder …), le visualiseur s’affiche en console colorée. 
 Sinon, c’est la TUI Textual qui se lance.
 
 Arguments :
@@ -129,7 +129,7 @@ def save_json(
 from jsonviewer import save_json
 
 data = {
-    "user": "alice",
+    "user": "Alice",
     "score": 42,
     "date": "2025-05-18"
 }
@@ -173,12 +173,12 @@ if data is not None:
 
 Le package contient :
 
-jsonviewer/
-├── run_viewer.py         # Script de lancement
-└── jsonviewer/
-    ├── __init__.py    # Import simplifié des fonctions clés
-    ├── viewer.py      # Visualiseur TUI et console, fonction view_json
-    └── utils.py       # Fonction save_json et load_json
+jsonviewer/  
+├── run_viewer.py         # Script de lancement  
+└── jsonviewer/  
+    ├── __init__.py    # Import simplifié des fonctions clés  
+    ├── viewer.py      # Visualiseur TUI et console, fonction view_json  
+    └── utils.py       # Fonction save_json et load_json  
 
 L'import est facilité grâce au fichier __init__ :
 
