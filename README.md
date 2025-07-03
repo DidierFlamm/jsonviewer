@@ -174,7 +174,7 @@ if data is not None:
 Le package contient :
 ```
 jsonviewer/
-├── run_viewer.py         # Script de lancement
+├── run_viewer.py      # Script de lancement
 └── jsonviewer/
     ├── __init__.py    # Import simplifié des fonctions clés
     ├── viewer.py      # Visualiseur TUI et console, fonction view_json
