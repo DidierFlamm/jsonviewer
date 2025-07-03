@@ -1,4 +1,4 @@
-# 📄 JSON Viewer
+# 🌳 JSON Viewer
 
 Un visualiseur de fichier JSON en terminal sous forme d’arbre coloré, soit :
 
@@ -7,7 +7,7 @@ Un visualiseur de fichier JSON en terminal sous forme d’arbre coloré, soit :
 
 ---
 
-## 🚀 Installation des dépendances
+## 📦 Installation des dépendances
 
 ```bash
 pip install textual rich
